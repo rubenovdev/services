@@ -1,0 +1,23 @@
+<ActionBar title="Home">
+</ActionBar>
+
+<GridLayout>
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <!--Add your page content here-->
+            <Label text="Выберите категорию"></Label>
+            <ListView [items]="facts" (itemTap)="onItemTap($event)"
+                style="height:1250px">
+                <ng-template let-fact="item">
+                    <FlexboxLayout flexDirection="row"
+                        [nsRouterLink]="['/page', fact]">
+                        <Label [text]="fact" class="t-12"
+                            verticalAlignment="center" style="width: 60%">
+                        </Label>
+                    </FlexboxLayout>
+                </ng-template>
+            </ListView>
+          
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

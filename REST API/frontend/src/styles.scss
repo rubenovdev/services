@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~materialize-css/dist/css/materialize.min.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.body{
+    width: 80%;
+    margin: 2em auto;
+}
+h2, h3, p, span
+{
+    cursor:default;
+}
+a{
+    cursor:pointer;
+}
